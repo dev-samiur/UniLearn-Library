@@ -35,4 +35,21 @@ public class Book {
 		return rs;
 	}
 	
+	public ResultSet findByCatagory(String catagory)
+	{
+		sql= "SELECT * FROM books where book_catagory="+ catagory;
+		
+		try {
+			
+			stmt  = conn.createStatement();
+			rs= stmt.executeQuery(sql);
+	
+			
+	    }catch (SQLException e) {
+	            System.out.println(e.getMessage());
+	    }
+		
+		return rs;
+	}
+	
 }

@@ -38,7 +38,7 @@ public class Book {
 	
 	public ResultSet findByCatagory(String catagory)
 	{
-		sql= "SELECT * FROM books where book_catagory="+ catagory;
+		sql= "SELECT * FROM books where book_catagory='"+catagory+"'";
 		
 		try {
 			
